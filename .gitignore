@@ -41,6 +41,7 @@ typings/
 
 # Optional npm cache directory
 .npm
+*-lock.json
 
 # Optional eslint cache
 .eslintcache
@@ -53,7 +54,4 @@ typings/
 
 # Yarn Integrity file
 .yarn-integrity
-
-# dotenv environment variables file
-.env
 
