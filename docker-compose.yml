@@ -1,9 +1,10 @@
 version: "3.3"
 services:
-  node:
-    image: node:9.11.1
+  node: 
+    build: ./node/
     volumes: 
-      - ./node:/node
-    command: sh -c "cd /node && npm install --save && node app"
+      - ./node:/usr/src/app/
+    ports:
+      - "80:3000"
     env_file: 
       - ./env/local.env
